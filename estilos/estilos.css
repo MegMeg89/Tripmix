@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&family=Montserrat&family=Roboto&display=swap');
+/* *{
+    outline: 1px dotted red;
+} */
+
+body {
+    font-family: 'roboto';
+    background-color: black;
+    color: white;
+}
+
+
+/* COLORES: AZUL: #256BB3 VERDE:#8CCBBA NARANJA:#F29318*/
+
+header {
+    position: relative;
+}
+
+#logo {
+    width: 219px;
+    height: 79px;
+    background: url("../recursos/logocelutablet.png");
+    font-size: 0;
+    position: absolute;
+    left: 20px;
+    z-index: 1;
+}
+
+
+@media screen and (max-width: 767px) {
+
+#logo {
+    left: calc(50% - 110px);
+    }
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("../recursos/hamburguesa.png");
+}
+
+.navbar-dark .navbar-toggler {
+    border: none;
+    color: transparent;
+}
+
+
+.navbar-toggler {
+    border-radius: 0;
+    transition: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.carousel-caption {
+    background: transparent;
+}
+
+#banner h2,
+div.carousel-indicators,
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon {
+    background-color: transparent;
+}
+
+#nosotros {
+    background-image: url("../recursos/cruzazulchica.png");
+    background-repeat: repeat;
+}
+
+#pastillasinformacion {
+    background-color: white;
+    background-image: url("../recursos/cruzazulchica.png");
+    background-repeat: repeat;
+    color: #256BB3;
+}
+
+#pastillasinformacion h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);   
+}
+
+
+.tarjetas {
+    max-width: 450px;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+    background-color: #256BB3;
+    color: white;
+}
+
+
+#preguntas .accordion-button {
+    cursor: pointer;
+    background-color: #256BB3;
+    color: white;
+}
+
+
+
+#preguntas .accordion-button:not(.collapsed) {
+    background-color: #8CCBBA;
+    color: black;
+    font-weight: 600;
+}
+
+
+
+#preguntas {
+    background-image: url("../recursos/cruzazulchica.png");
+    background-repeat: repeat;    
+}
+
+.accordion-body {
+    color: black;
+}
+
+
+#galeriadefotos {
+    background-image: url("../recursos/cruzazulchica.png");
+    background-repeat: repeat;
+}
+
+video {
+    width: 100%;
+    margin-bottom: -8px;
+}
+
+form {
+    background-color: #256BB3;
+}
+
+
+
+@media screen and (min-width: 767px) {
+    #logo {
+        position: relative;
+    }    
+    form{
+        width: 75%;
+        margin: auto;
+    }
+    #contacto {       
+        background-image: url("../recursos/cruzazulchica.png");
+        background-repeat: repeat;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    #nosotros {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    body {
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #256BB3;
+
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .nav-link:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+}
