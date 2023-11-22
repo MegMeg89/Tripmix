@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARCÍA, María Emilia - DMT2BV - Tarde - 2023</title>
+    <link rel="stylesheet" href="estilos/bootstrap.min.css"> 
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="estilos/jquery.fancybox.min.css">
+</head>
+<body>
+
+<header class="container-fluid d-md-flex justify-content-md-between gap-2">
+  <h1 id="logo">Tripmix</h1>
+
+  <nav class="row navbar navbar-expand-md navbar-dark">
+    <div class="container pt-3 pb-3" id="navbar">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Botón hamburguesa">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="barra">
+        <ul class="navbar-nav text-center ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#nosotros">Quiénes somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pastillasinformacion">Funcionalidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeriacontenedor">Multimedia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#preguntas">Preguntas frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- BANNER SLIDER -->
+
+<section class="container-fluid p-0" id="banner">
+  <div id="galeria" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#galeria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+      <button type="button" data-bs-target="#galeria" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+      <button type="button" data-bs-target="#galeria" data-bs-slide-to="2" aria-label="Imagen 3"></button> 
+    </div>
+    
+    <div class="carousel-inner">
+      <figure class="carousel-item active">
+        <picture>
+          <source media="(max-width: 576px)" srcset="recursos/banner1celu.jpg">
+          <source media="(max-width: 991px)" srcset="recursos/banner1tablet.jpg">
+          <img src="recursos/banner1pc.jpg" class="d-block w-100" alt="imagen playa">
+        </picture>
+        <figcaption class="carousel-caption">
+          <h2>VIAJÁ</h2>
+        </figcaption>
+      </figure>
+
+      <figure class="carousel-item">
+        <picture>
+          <source media="(max-width: 576px)" srcset="recursos/banner2celu.jpg">
+          <source media="(max-width: 991px)" srcset="recursos/banner2tablet.jpg">
+          <img src="recursos/banner2pc.jpg" class="d-block w-100" alt="imagen globos">
+        </picture>
+        <figcaption class="carousel-caption">
+          <h2>EXPLORÁ</h2>
+        </figcaption>
+      </figure>
+    
+      <figure class="carousel-item">
+        <picture>
+          <source media="(max-width: 576px)" srcset="recursos/banner3celu.jpg">
+          <source media="(max-width: 991px)" srcset="recursos/banner3tablet.jpg">
+          <img src="recursos/banner3pc.jpg" class="d-block w-100" alt="imagen camioneta">
+        </picture>
+
+        <figcaption class="carousel-caption">
+          <h2>AVENTURATE</h2>
+        </figcaption>
+      </figure>
+    </div>
+                
+    <button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</section>
+    
+    
+<!-- SECCION NOSOTROS -->
+    
+<section class="container-fluid py-4 px-5" id="nosotros">
+  <h2 class="text-center">QUIÉNES SOMOS</h2>
+  <div class="row d-flex align-items-center">
+    <div class="col-md-5 align-items-center">
+      <p>TRIPMIX es una plataforma de viajes que conecta a los viajeros de todo el mundo para compartir experiencias y recomendaciones personalizadas.</p>
+      <p>Los usuarios pueden crear perfiles con sus preferencias de viaje y
+      recibir sugerencias de destinos, actividades y alojamientos de otros usuarios.</p>
+
+    <picture class="d-flex justify-content-center">
+      <source media="(max-width: 991px)" srcset="recursos/storecelu.png">
+      <img src="recursos/storepc2.png" class="d-block" alt="descargar aplicacion">
+    </picture>
+  </div>
+
+    <div class="col-md d-flex flex-column align-items-center">
+      <picture>
+        <source media="(max-width: 991px)" srcset="recursos/mockupappcelu.png">
+        <img src="recursos/mockupapppc.png" class="d-block w-100" alt="mockup aplicación">
+      </picture>
+    </div>
+  </div>
+</section>
+    
+    
+<!-- PASTILLAS INFO -->
+<section class="container-fluid pt-4 pb-4" id="pastillasinformacion">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center">
+      <h2 class="fw-bolder fs-1 pb-3">FUNCIONALIDADES</h2>
+    </div>
+    <div class="container-fluid card mb-3 p-0 tarjetas">
+      <figure class="row g-0">
+          <div class="col-md-4 col-5">
+          <img src="recursos/inicio.png" class="img-fluid rounded-start" alt="boton inicio">
+          </div>
+        <figcaption class="col-md-8 col-7 card-body">
+          <h3 class="card-title">INICIO</h3>
+          <p class="card-text">Permite a los usuarios ver recomendaciones y actualizaciones de viaje de otros usuarios.</p>
+          <a href="#" class="btn btn-custom">Ver más</a>
+        </figcaption>
+      </figure>
+  </div>
+    
+  <div class="container-fluid card mb-3 p-0 tarjetas">
+    <figure class="row g-0">
+      <div class="col-md-4 col-5">
+        <img src="recursos/actividades.png" class="img-fluid rounded-start" alt="boton actividades">
+      </div>
+        <figcaption class="col-md-8 col-7 card-body">
+          <h3 class="card-title">ACTIVIDADES</h3>
+          <p class="card-text">Permite a los usuarios ver recomendaciones y actualizaciones de viaje de otros usuarios.</p>
+          <a href="#" class="btn btn-custom">Ver más</a>
+        </figcaption>
+      </figure>
+  </div>
+    
+  <div class="container-fluid card mb-3 p-0 tarjetas">
+    <figure class="row g-0">
+      <div class="col-md-4 col-5">
+        <img src="recursos/gastronomia.png" class="img-fluid rounded-start" alt="boton locales gastronomicos">
+      </div>
+      <figcaption class="col-md-8 col-7 card-body">
+          <h3 class="card-title">LOCALES GASTRONÓMICOS</h3>
+          <p class="card-text">Los usuarios pueden organizar cenas grupales, tours culinarios y compartir recomendaciones de restaurantes.</p>
+          <a href="#" class="btn btn-custom">Ver más</a>
+        </figcaption>
+      </figure>
+  </div>
+    
+  <div class="container-fluid card mb-3 p-0 tarjetas">
+    <figure class="row g-0">
+      <div class="col-md-4 col-5">
+        <img src="recursos/alojamientos.png" class="img-fluid rounded-start" alt="boton alojamientos">
+      </div>
+      <figcaption class="col-md-8 col-7 card-body">
+          <h3 class="card-title">ALOJAMIENTOS</h3>
+          <p class="card-text">Ofrece opciones de alojamiento
+          recomendadas por otros viajeros, basadas en preferencias personales.</p>
+          <a href="#" class="btn btn-custom">Ver más</a>
+        </figcaption>
+      </figure>
+  </div>
+    
+  <div class="container-fluid card mb-3 p-0 tarjetas">
+    <figure class="row g-0">
+      <div class="col-md-4 col-5">
+        <img src="recursos/mensajes.png" class="img-fluid rounded-start" alt="boton mensajes">
+      </div>
+        <figcaption class="col-md-8 col-7 card-body">
+          <h3 class="card-title">MENSAJES</h3>
+          <p class="card-text">Los usuarios pueden conectarse con otros viajeros a través de la función de chat y mensajes privados. </p>
+          <a href="#" class="btn btn-custom">Ver más</a>
+          </figcaption>
+        </figure>
+    </div>
+    
+    <div class="container-fluid card mb-3 p-0 tarjetas">
+      <figure class="row g-0">
+        <div class="col-md-4 col-5">
+          <img src="recursos/fotografias.png" class="img-fluid rounded-start" alt="boton fotografias">
+        </div>
+          <figcaption class="col-md-8 col-7 card-body">
+            <h3 class="card-title">FOTOGRAFÍAS</h3>
+            <p class="card-text">Los usuarios pueden compartir sus fotos de viaje en ubicaciones específicas y ver las fotos de otros en el mismo área.</p>
+            <a href="#" class="btn btn-custom">Ver más</a>
+          </figcaption>
+        </figure>
+    </div>
+  </div>
+</section>
+    
+    
+<!-- GALERÍA DE FOTOS -->
+    
+<section class="pt-2" id="galeriadefotos">
+  <h2 class="text-center">PANTALLAS</h2>
+  <div class="d-flex justify-content-center flex-wrap gap-2" id="galeriacontenedor">
+    <a class="text-decoration-none" data-fancybox="galeria" data-srcset="recursos/pantallalogincelu.png 576w, recursos/pantallalogintablet.png 991w, recursos/pantallaloginpc.png 1600w" href="recursos/pantallaloginpc.png">
+      <img src="recursos/pantallaloginmini.png" alt="pantalla login">
+    </a>
+    
+    <a class="text-decoration-none" data-fancybox="galeria" data-srcset="recursos/pantallainiciocelu.png 576w, recursos/pantallainiciotablet.png 991w, recursos/pantallainiciopc.png 1600w"    href="recursos/pantallainiciopc.png">
+      <img src="recursos/pantallainiciomini.png" alt="pantalla inicio">
+    </a>
+    <a class="text-decoration-none" data-fancybox="galeria" data-srcset="recursos/pantallalugarescelu.png 576w, recursos/pantallalugarestablet.png 991w, recursos/pantallalugarespc.png 1600w" href="recursos/pantallalugarespc.png">
+      <img src="recursos/pantallalugaresmini.png" alt="pantalla actividades">
+    </a>
+    <a class="text-decoration-none" data-fancybox="galeria" data-srcset="recursos/pantallalugaresdetallecelu.png 576w, recursos/pantallalugaresdetalletablet.png 991w, recursos/pantallalugaresdetallepc.png 1600w" href="recursos/pantallalugaresdetallepc.png">
+      <img src="recursos/pantallalugaresdetallemini.png" alt="pantalla detalle actividades">
+    </a>
+    <a class="text-decoration-none" data-fancybox="galeria" data-srcset="recursos/pantallamensajescelu.png 576w, recursos/pantallamensajestablet.png 991w, recursos/pantallamensajespc.png 1600w" href="recursos/pantallamensajespc.png">
+      <img src="recursos/pantallamensajesmini.png" alt="pantalla mensajes">
+    </a>
+    <a class="text-decoration-none" data-fancybox="galeria" data-srcset="recursos/pantallafotografiascelu.png 576w, recursos/pantallafotografiastablet.png 991w, recursos/pantallafotografiaspc.png 1600w" href="recursos/pantallafotografiaspc.png ">
+      <img src="recursos/pantallafotografiasmini.png" alt="pantalla fotografias">
+    </a>
+  </div>
+
+  <video src="recursos/videotripmix.mp4" controls preload> </video>
+</section>
+    
+    
+
+<!-- PREGUNTAS -->
+    
+<section class="container-fluid pt-2 pb-2" id="preguntas">
+  <h2 class="text-center">PREGUNTAS FRECUENTES</h2>
+  <div class="borde pb-3 accordion-item">  
+    <div class="accordion-header" id="tituloplanificar">
+      <h3 class="accordion-button" data-bs-toggle="collapse" data-bs-target="#contenidoplanificar" aria-expanded="true" aria-controls="contenidoplanificar">
+      ¿Cómo puedo planificar mi próximo viaje utilizando la aplicación?
+      </h3>
+    </div>
+    <div id="contenidoplanificar" class="accordion-collapse collapse show" aria-labelledby="tituloplanificar">
+      <div class="accordion-body">
+        <p>¡Planificar tu próximo viaje es fácil con nuestra aplicación! Sigue estos simples pasos:</p>
+        <p>1. Destinos: Descubre lugares emocionantes y populares con solo unos clics. Filtra por tus intereses y preferencias para encontrar el destino perfecto.</p>
+        <p>2. Personaliza tu Itinerario: Crea un itinerario personalizado seleccionando actividades, lugares de interés y restaurantes que te interesen. La aplicación te proporcionará recomendaciones basadas en tus preferencias.</p>
+        <p>3.Recibe Consejos Locales: Conéctate con la comunidad de viajeros, obtén consejos locales y recomendaciones auténticas para hacer que tu experiencia sea única.</p>
+      </div>
+    </div>
+  </div>
+  <div class="borde pb-3 accordion-item">
+    <div class="accordion-header" id="tituloinformacion">
+      <h3 class="accordion-button collapsed"  data-bs-toggle="collapse" data-bs-target="#contenidoinformacion" aria-expanded="false" aria-controls="contenidoinformacion">
+      ¿Cómo puedo estar seguro de que la información de la aplicación es confiable y actualizada?
+      </h3>
+    </div>
+    <div id="contenidoinformacion" class="accordion-collapse collapse" aria-labelledby="tituloinformacion">
+      <div class="accordion-body">
+        <p>En TRIPMIX, nos comprometemos a proporcionar información precisa y actualizada. Aquí te explicamos cómo lo logramos:</p>
+        <p>1.Fuentes Confiables: Recopilamos datos de fuentes confiables, como agencias de viajes reconocidas, reseñas de usuarios verificados y socios de la industria turística.</p>
+        <p>2. Constantes: Nuestro equipo trabaja continuamente para mantener la información actualizada. Las actualizaciones automáticas garantizan que siempre tengas acceso a la información más reciente.</p>
+        <p>3.Opiniones Reales: Las reseñas de otros usuarios te brindan perspectivas reales. Contribuye a la comunidad compartiendo tus experiencias y ayudando a otros viajeros a descubrir joyas ocultas.</p>
+        <p>Estamos comprometidos a brindarte una experiencia de viaje informada y enriquecedora. Si tienes más preguntas, no dudes en ponerte en contacto con nuestro equipo de soporte. ¡Estamos aquí para ayudarte!</p>
+      </div>
+    </div>
+  </div>
+    
+  <div class=" borde pb-3 accordion-item">
+    <div class="accordion-header" id="tituloprivacidad">
+      <h3 class="accordion-button collapsed"  data-bs-toggle="collapse" data-bs-target="#contenidoprivacidad" aria-expanded="false" aria-controls="contenidoprivacidad">
+      ¿Cómo protege la aplicación mi privacidad y datos personales?
+      </h3>
+    </div>
+    <div id="contenidoprivacidad" class="accordion-collapse collapse" aria-labelledby="tituloprivacidad">
+      <div class="accordion-body">
+        <p>Tu privacidad es nuestra máxima prioridad. Aquí te explicamos cómo protegemos tus datos:</p>
+        <p>1. Seguridad de la Información: Utilizamos tecnologías de seguridad avanzadas para proteger tus datos contra accesos no autorizados. Tu información personal está cifrada y almacenada de manera segura.</p>
+        <p>2. Control Total: Tú decides qué información compartir. La aplicación te brinda controles precisos para gestionar la visibilidad de tu perfil y preferencias.</p>
+        <p>3. Política de Privacidad Transparente: Nuestra política de privacidad detalla cómo recopilamos, usamos y protegemos tus datos. Lee nuestra política para comprender completamente nuestras prácticas y compromisos.</p>
+        <p>Estamos comprometidos a brindarte una experiencia de viaje segura, confiable y personalizada. Si tienes más preguntas, no dudes en ponerte en contacto con nuestro equipo de soporte. ¡Estamos aquí para ayudarte!</p>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
+<!-- FORMULARIO CONTACTO -->
+    
+<section class="container-fluid" id="contacto">
+  <div class="row">
+    <div class="col">
+      <form class="d-flex flex-column gap-2 mb-1 p-2" action="https://formsubmit.co/maria.garcia@davinci.edu.ar" method="post">
+        <h2 class="text-center">Formulario de contacto</h2>
+        <div class="d-flex gap-1">
+          <label class="w-25" for="nombre">Nombre y Apellido</label>
+          <input class="flex-grow-1" type="text" name="nombre" id="nombre">
+        </div>
+        <div class="d-flex gap-1">
+          <label class="w-25" for="telefono">Teléfono</label>
+          <input class="flex-grow-1" type="tel" name="telefono" id="telefono">
+        </div>
+        <div class="d-flex gap-1">
+          <label class="w-25" for="email">Correo</label>
+          <input class="flex-grow-1" type="email" name="email" id="email">
+        </div>
+        <div class="d-flex gap-1">
+          <label class="w-25" for="mensaje">Comentarios</label>
+          <textarea class="flex-grow-1" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        </div>
+        <input class="w-25 m-auto" type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="container-fluid d-flex justify-content-center piedepagina p-3">
+  <div class="row">
+    <div class="col-5">
+      <ul class="list-unstyled">
+        <li>Alúmna: María Emilia Garcia</li>
+        <li>Maquetado y desarrollo web</li>
+        <li>Segundo cuatrimestre</li>
+        <li>Comisión:DMT2BV</li>
+        <li>Turno tarde</li>
+        <li>Año 2023</li>
+        <li>Segundo Parcial</li>
+      </ul>
+      
+    </div>
+    <div class="col d-flex flex-column  justify-content-between">
+      <div>
+        <a href="https://www.instagram.com"><img src="./recursos/instagram.png" alt=""></a>
+        <a href="https://www.facebook.com"><img src="./recursos/facebook.png" alt=""></a>
+        <a href="https://www.twitter.com"><img src="./recursos/twitter.png" alt=""></a>
+      </div>
+      <p>Tripmix SA. Todos los derechos reservados.®</p>
+    </div>
+  </div>
+</footer>
+    
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
